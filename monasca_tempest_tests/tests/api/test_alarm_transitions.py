@@ -43,6 +43,9 @@ class TestAlarmTransitions(base.BaseMonascaTest):
             self.assertEqual(200, resp.status)
             if len(resp_body['elements']) != 0:
                 break
+        print('elements')
+        print(len(resp_body['elements']))
+        print(resp_body)
         self.assertEqual(1, len(resp_body['elements']))
         alarm_id = resp_body['elements'][0]['id']
         initial_state = resp_body['elements'][0]['state']
