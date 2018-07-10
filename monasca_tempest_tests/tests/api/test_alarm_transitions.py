@@ -21,7 +21,7 @@ from monasca_tempest_tests.tests.api import base
 from monasca_tempest_tests.tests.api import constants
 from monasca_tempest_tests.tests.api import helpers
 
-WAIT_SECS = 10
+WAIT_SECS = 15
 
 
 class TestAlarmTransitions(base.BaseMonascaTest):
