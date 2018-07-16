@@ -20,7 +20,7 @@ from monasca_tempest_tests.tests.log_api import base
 
 _RETRY_COUNT = 15
 _RETRY_WAIT = 2
-_UNICODE_CASES = test_metric_validation.UNICODE_MESSAGES
+_UNICODE_CASES = base.UNICODE_MESSAGES
 
 
 class TestUnicodeV3(base.BaseLogsTestCase):
